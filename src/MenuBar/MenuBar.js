@@ -8,6 +8,8 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { makeStyles } from '@material-ui/core/styles';
 import { EditorBorderRight } from 'material-ui/svg-icons';
 import { green } from '@material-ui/core/colors';
+import Button from '@material-ui/core/Button';
+
 
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -40,6 +42,8 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.background,
         padding: theme.spacing(1),
         marginRight: 10,
+        color: 'white',
+        align: 'right',
     },
     title: {
         backgroundColor: theme.palette.background,
@@ -61,10 +65,10 @@ export default function ElevateAppBar(props) {
         <AppBar>
           <Toolbar className={classes.toolBar}>
           <Typography variant="h4" className={classes.title}>NetSuite Help</Typography>
-            <Typography variant="h6" className={classes.root}>About</Typography>
-            <Typography variant="h6" className={classes.root}>Services</Typography>
-            <Typography variant="h6" className={classes.root}>Contact</Typography>
-            <Typography variant="h6" className={classes.root}>Login</Typography>
+            <Button variant="h6" className={classes.root}>About</Button>
+            <Button variant="h6" className={classes.root}>Services</Button>
+            <Button variant="h6" className={classes.root}>Contact</Button>
+            <Button variant="h6" className={classes.root}>Login</Button>
           </Toolbar>
         </AppBar>
       </ElevationScroll>
