@@ -6,8 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { makeStyles } from '@material-ui/core/styles';
-import { EditorBorderRight } from 'material-ui/svg-icons';
-import { green } from '@material-ui/core/colors';
 import Button from '@material-ui/core/Button';
 
 
@@ -44,6 +42,7 @@ const useStyles = makeStyles(theme => ({
         marginRight: 10,
         color: 'white',
         align: 'right',
+        display: 'inline',
     },
     title: {
         backgroundColor: theme.palette.background,
